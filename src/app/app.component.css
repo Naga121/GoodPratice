@@ -1,0 +1,20 @@
+.nav-bar{
+    justify-content: space-between;
+}
+.nav-bar button{
+    padding-right: 1rem;
+    
+}
+.nav-bar button:hover{
+    color: rgb(42, 63, 187);
+}
+mat-drawer-container{
+    height:100%;
+}
+mat-drawer{
+    background-color: #f44336;
+    width: 200px;
+}
+mat-drawer, mat-drawer-content{
+    padding: 4rem;
+}
