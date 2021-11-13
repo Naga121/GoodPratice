@@ -1,0 +1,60 @@
+{
+  "Employee": [
+    {
+      "eName": "Nagaraju Thota",
+      "email": "thota.nagaraju1432@gmail.com",
+      "mobile": "9705081432",
+      "role": "Developer",
+      "skill": "Angular,TypeScript",
+      "yearExp": "12",
+      "id": 1
+    },
+    {
+      "eName": "Raju Thota",
+      "email": "nagaraju@gmail.com",
+      "mobile": "6789012345",
+      "role": "Testing",
+      "skill": "Selenium",
+      "yearExp": "15",
+      "id": 2
+    },
+    {
+      "eName": "Nagaraju",
+      "email": "nagaraju@gmail.com",
+      "mobile": "9012345678",
+      "role": "Testing",
+      "skill": "Unit Test",
+      "yearExp": "22",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "eName": "adi",
+      "email": "adi@gmali.com",
+      "mobile": "6546556455",
+      "gender": "Male",
+      "role": "Developer",
+      "skill": "Java,JDBC",
+      "yearExp": "31"
+    },
+    {
+      "eName": "lokesh",
+      "email": "lokesh@gmail.com",
+      "mobile": "9874561230",
+      "gender": "Male",
+      "role": "UI  Developer",
+      "skill": "Angular,React",
+      "yearExp": "10",
+      "id": 6
+    },
+    {
+      "eName": "Nagaraju Thota",
+      "email": "thota.nagaraju1432@gmail.com",
+      "mobile": "9781432050",
+      "role": "eite",
+      "skill": "fr",
+      "yearExp": "44",
+      "id": 7
+    }
+  ]
+}

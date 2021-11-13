@@ -1,0 +1,48 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-dark text-warning text-center">
+                        <p class="h4">Form Resgistation</p>
+                    </div>
+                    <div class="card-body bg-light">
+                        
+                        <form (submit)="onSubRegister()">
+                            <div class="mb-2">
+                                <input type="text" class="form-control" placeholder="Name" name="name" [(ngModel)]="user.name">
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="user.email">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="user.password">
+                            </div>
+                            <div class="mb-2">
+                               <select class="form-control" name="role" [(ngModel)]="user.role">
+                                   <option value="1" selected> --select--</option>
+                                   <option value="Se t">Se t</option>
+                                   <option value="sr.Se t">sr.Se t</option>
+                                   <option value="tech lead">tech lead</option>
+                               </select>
+                            </div>
+                            <div class="mb-2">
+                                <textarea  cols="30" rows="2" class="form-control" placeholder="Message" name="message" [(ngModel)]="user.message"></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <input type="checkbox" class="form-check-input mx-2" name="tc" [(ngModel)]="user.tc" >Accepts T&C
+                            </div>
+                            <div class="mb-2">
+                                <input type="submit" class="btn btn-primary btn-outline-dark btn-sm text-light" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- <pre class="h6">{{user|json }}</pre> -->
+                
+            </div>
+        </div>
+    </div>
+</section>

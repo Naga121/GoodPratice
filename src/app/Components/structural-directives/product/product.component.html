@@ -1,0 +1,12 @@
+<!-- <pre>{{item  | json}}</pre> -->
+<div class="card shadow-lg" *ngIf="item">
+    <img [src]="item.img" class="img-fluid" alt="">
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">{{item.name}}</li>
+            <li class="list-group-item">{{item.price}}</li>
+            <li class="list-group-item">{{item.qty}}</li>
+            <li class="list-group-item">{{item.inStock}}</li>
+        </ul>
+    </div>
+</div>

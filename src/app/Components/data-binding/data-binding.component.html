@@ -1,1 +1,92 @@
-<p>data-binding works!</p>
+<section class="mt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-light bg-secondary">
+                        <p class="h6 ">Date Binding (Manual)</p>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <input type="text" class="form-control" name="userName" (value)="userName" (input)="upDate($event)" >
+                            <p class="h4">{{userName}}</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-light bg-secondary">
+                        <p class="h6 ">Date Binding (Auto)</p>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <input type="text" class="form-control" name="userName" [(ngModel)]="userName" >
+                            <p class="h4">{{userName}}</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-light bg-secondary">
+                        <p class="h6 ">SMS App</p>
+                    </div>
+                    <div class="card-body  bg-light">
+                        <form action="">
+                            <textarea class="form-control" name="message" [maxlength]="maxCharCount" [(ngModel)]="message" placeholder="Enter Message" rows="2"></textarea>
+                        </form>
+                        
+                    </div>
+                    <div class="caard-footer">
+                        <p class="h6">The Charecters Remaining : <span class="fw-bold">{{message.length}}/{{maxCharCount}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-light bg-secondary">
+                        <p class="h5">Show Password</p>
+                    </div>
+                    <div class="card-body bg-light">
+                        <input [type]="inputType" name="password" class="form-control">
+                        <input type="checkbox" (change)="showPassword($event)" name="" >show password
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center text-light bg-secondary">
+                        <p class="h4">Amount Range </p>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form >
+                            <label for="amount">Amount : </label>
+                            <input type="range" name="amount" [(ngModel)]="amount" class="form-range" min="500" max="50000">
+                        </form>
+                        {{amount|currency:'INR'}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center "[class.bg-dark]="darkTheme" [class.text-warning]="darkTheme">
+                        <p class="h4">Theme Selection </p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" name="darkTheme" [(ngModel)]="darkTheme" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">ChangeTheme </label>
+                          </div>
+                    </div>
+                    <div class="card-body" [class.bg-info]="darkTheme" [class.text-light]="darkTheme">
+                        <img src="assets/electronics/e2.jpg" class="img-fluid" alt="">
+                        <p class="h4 mt-3">VIVO</p>
+                        <p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic cupiditate deleniti omnis enim iste nulla voluptatem ex a impedit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>

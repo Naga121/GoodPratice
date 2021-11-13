@@ -10,6 +10,11 @@ import { InterpolationComponent } from './Components/interpolation/interpolation
 import { EventBindingComponent } from './Components/event-binding/event-binding.component';
 import { ShoppingCartComponent } from './Components/shopping-cart/shopping-cart.component';
 import { DataBindingComponent } from './Components/data-binding/data-binding.component';
+import { FormBindingComponent } from './Components/form-binding/form-binding.component';
+import { StructuralDirectivesComponent } from './Components/structural-directives/structural-directives.component';
+import { ProductComponent } from './Components/structural-directives/product/product.component';
+import { PipesComponent } from './Components/pipes/pipes.component';
+import { SliderComponent } from './Components/slider/slider.component';
 
 @NgModule({
     declarations: [
@@ -18,6 +23,11 @@ import { DataBindingComponent } from './Components/data-binding/data-binding.com
         EventBindingComponent,
         ShoppingCartComponent,
         DataBindingComponent,
+        FormBindingComponent,
+        StructuralDirectivesComponent,
+        ProductComponent,
+        PipesComponent,
+        SliderComponent,
     ],
     imports: [
         BrowserModule,

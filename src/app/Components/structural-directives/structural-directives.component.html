@@ -1,0 +1,32 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center bg-dark text-warning">
+                        <p class="h4">NgIf Structural Directives</p>
+                    </div>
+                    <div class="card-body mx-2">
+                        <p class="h3" *ngIf="isLogin" >Welcome Naga!</p>
+                        <p class="h3" *ngIf="!isLogin" >Thank you!</p>
+
+                        <button *ngIf="!isLogin" (click)="logIn()" class="btn btn-success btn-sm">Login</button>
+                        <button *ngIf="isLogin" (click)="logOut()" class="btn btn-warning btn-sm mx-2">LogOut</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                <p class="h3 text-center text-danger">Shopping Cart Items</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus pariatur dolorem consequatur sint iure recusandae necessitatibus? Facilis, pariatur vel!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let x of products">
+                <app-product [item]="x"></app-product>
+            </div>
+        </div>
+    </div>
+</section>
