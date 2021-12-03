@@ -1,0 +1,53 @@
+.back{
+    background-color: teal;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    display: none;
+}
+div img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  black;
+    margin-bottom: 10px;
+    
+}
+/* mobile screen */
+@media (max-width:500px){
+    .back{
+        background-color: yellowgreen;
+    }
+    #mobile-screen h1{
+        display: block;
+    }
+}
+/* tablet screen */
+@media (min-width:501px) and (max-width:768px){
+    .back{
+        background-color: rgb(147, 184, 233);
+    }
+    #tablet-screen h1{
+        display: block;
+    }
+}
+/* laptop screen */
+@media (min-width:769px) and (max-width:1200px){
+    .back{
+        background-color: rgb(201, 211, 59);
+    }
+    #laptop-screen h1{
+        display: block;
+    }
+}
+/* wide */
+@media (min-width:1201px) {
+    .back{
+        background-color: rgb(151, 23, 134);
+    }
+    #wide-screen h1{
+        display: block;
+    }
+}

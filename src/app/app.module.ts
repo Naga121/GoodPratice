@@ -15,6 +15,7 @@ import { StructuralDirectivesComponent } from './Components/structural-directive
 import { ProductComponent } from './Components/structural-directives/product/product.component';
 import { PipesComponent } from './Components/pipes/pipes.component';
 import { SliderComponent } from './Components/slider/slider.component';
+import { GridComponent } from './Components/grid/grid.component';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { SliderComponent } from './Components/slider/slider.component';
         ProductComponent,
         PipesComponent,
         SliderComponent,
+        GridComponent,
     ],
     imports: [
         BrowserModule,
