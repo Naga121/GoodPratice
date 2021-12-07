@@ -1,0 +1,52 @@
+<div class="container-fluid col-md-4 bg-ligth shadow-lg">
+    <h1>Templet Drivender Form</h1>
+    <form class="mx-3" #userForm="ngForm">
+        <pre>
+            {{userForm.value| json}}
+        </pre>
+        <div class="form-group">
+            <label class="label" for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your Name"
+                [class.is-valid]="name.valid && name.touched" [class.is-invalid]="name.invalid && name.touched"
+                name="name" #name="ngModel" [(ngModel)]="user.name" required />
+            <span class="text-danger" *ngIf="name.invalid && userForm.submitted" [class.d-none]="name.valid || name.untouched">Email is Required*</span>
+
+        </div>
+        <div class="form-group">
+            <label class="label" for="email">Email</label>
+            <input type="text" class="form-control" placeholder="Enter your Email"
+                [class.is-valid]="email.valid && email.touched" [class.is-invalid]="email.invalid && email.touched"
+                name="email" #email="ngModel" [(ngModel)]="user.email" required />
+            <span class="text-danger" *ngIf="email.invalid && userForm.submitted" [class.d-none]="email.valid || email.untouched">Name is Required*</span>
+        </div>
+        <div class="form-group">
+            <label class="label" for="mobile">Mobile</label>
+            <input type="text" class="form-control" placeholder="Enter your Mobile"
+                [class.is-valid]="mobile.valid && mobile.touched" [class.is-invalid]="mobile.invalid && mobile.touched"
+                name="mobile" #mobile="ngModel" ngModel required />
+                <span class="text-danger" *ngIf="mobile.invalid && userForm.submitted" [class.d-none]="mobile.valid || mobile.untouched">Mobile number is Required*</span>
+        </div>
+        <div class="form-group">
+            <label class="label" for="topic">Technology</label>
+            <select class="form-select" name="topic" #topic="ngModel" [class.is-valid]="topic.valid && topic.touched" [class.is-invalid]="topic.invalid && topic.touched" [(ngModel)]="user.topic" required>
+                <option *ngFor="let topic of topics" [value]="topic">{{topic}}</option>
+            </select>
+            <span class="text-danger" *ngIf="topic.invalid && userForm.submitted" [class.d-none]="topic.valid || topic.untouched">Mobile number is Required*</span>
+        </div>
+        <div class="form-group m-3">
+            <div class="form-check" *ngFor="let set of timings">
+                <input type="radio" class="form-check-input" name="times" value={{set}} #times='ngModel' ngModel
+                    required> {{set}}
+                <span class="text-danger"  *ngIf="times.invalid && userForm.submitted">Select timings is Required*</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" class="form-check-input" name="tc" #tc="ngModel" ngModel required> &nbsp;
+            <label for="tc">T/C</label>
+            <span class="text-danger" *ngIf="tc.invalid && userForm.submitted"> TC</span>
+        </div>
+        <div class="form-group text-center mt-2">
+            <button type="submit" class="btn btn-primary btn-outline-dark tex-light text-center mb-3" (click)="userForm.errors?.['required']">Submite</button>
+        </div>
+    </form>
+</div>

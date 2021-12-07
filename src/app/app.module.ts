@@ -17,6 +17,7 @@ import { PipesComponent } from './Components/pipes/pipes.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import { GridComponent } from './Components/grid/grid.component';
 import { AddcartComponent } from './Components/addcart/addcart.component';
+import { TdfComponent } from './Components/tdf/tdf.component';
 
 @NgModule({
     declarations: [
@@ -32,6 +33,7 @@ import { AddcartComponent } from './Components/addcart/addcart.component';
         SliderComponent,
         GridComponent,
         AddcartComponent,
+        TdfComponent,
     ],
     imports: [
         BrowserModule,
