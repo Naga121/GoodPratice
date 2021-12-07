@@ -16,6 +16,7 @@ import { ProductComponent } from './Components/structural-directives/product/pro
 import { PipesComponent } from './Components/pipes/pipes.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import { GridComponent } from './Components/grid/grid.component';
+import { AddcartComponent } from './Components/addcart/addcart.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { GridComponent } from './Components/grid/grid.component';
         PipesComponent,
         SliderComponent,
         GridComponent,
+        AddcartComponent,
     ],
     imports: [
         BrowserModule,
