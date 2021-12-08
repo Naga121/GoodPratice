@@ -1,0 +1,22 @@
+.borderEffects{
+    border: 20px solid darkcyan;
+    box-shadow: 2px 3px 4px darkcyan  ;
+}
+.backgroundEffets{
+    background-color: royalblue;
+}
+.textEffects{
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+.errorStyle{
+    border: 2px solid red;
+    box-shadow: 2px 3px 0 4px red;
+
+}
+.validStyle{
+    border: 2px solid green;
+    box-shadow:2px 3px 4px green;
+}

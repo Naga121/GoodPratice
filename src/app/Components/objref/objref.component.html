@@ -1,0 +1,17 @@
+<div class="container">
+    <div style="margin: 10px;">
+        <div class="list-unstyled">
+            <li><input class="form-check-input" type="checkbox" [(ngModel)]="OnTextEffect">TextEffect</li>
+            <li><input class="form-check-input" type="checkbox" [(ngModel)]="OnBordEffect">BordEffect</li>
+            <li><input class="form-check-input" type="checkbox" [(ngModel)]="OnBackgroundEffect">BackgroundEffect</li>
+        </div>
+        <h1 [ngClass]="{borderEffects:OnBordEffect,textEffects:OnTextEffect,backgroundEffets:OnBackgroundEffect}">Nagaraju</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="from-group">
+        <label for="">Enter Even Number</label>
+        <input type="text" class="from-control" [ngClass]="{errorStyle:applyErrorStyle,validStyle:applyValidStyle}" name="even" [(ngModel)]="textEven" (blur)="OnBlur()">
+    </div>
+</div>

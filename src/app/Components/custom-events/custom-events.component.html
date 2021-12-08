@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>Select Category</h3>
+    <ul class="list-unstyled">
+        <li><button name="All" class="btn btn-link" (click)="categoryClicked($event)">All [{{allCount}}]</button> </li>
+        <li><button name="Electronics" class="btn btn-link" (click)="categoryClicked($event)">Electronics [{{electronics}}]</button> </li>
+        <li><button name="Jewelery" class="btn btn-link" (click)="categoryClicked($event)">Jewelery [{{jewelery}}]</button></li>
+        <li><button name="mens" class="btn btn-link" (click)="categoryClicked($event)">Mens [{{mens}}]</button></li>
+        <li><button name="Womens" class="btn btn-link" (click)="categoryClicked($event)">Womens [{{womens}}]</button></li>
+    </ul>
+    <section>
+        <select class="form-select" (change)="onChangeCategory()" [(ngModel)]="selectCategoryName">
+            <option *ngFor="let item of categories" [value]="item">{{item | uppercase}}</option>
+        </select>
+    </section>
+</div>

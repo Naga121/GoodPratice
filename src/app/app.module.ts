@@ -18,6 +18,10 @@ import { SliderComponent } from './Components/slider/slider.component';
 import { GridComponent } from './Components/grid/grid.component';
 import { AddcartComponent } from './Components/addcart/addcart.component';
 import { TdfComponent } from './Components/tdf/tdf.component';
+import { ObjrefComponent } from './Components/objref/objref.component';
+import { FormvalidComponent } from './Components/formvalid/formvalid.component';
+import { CustomEventsComponent } from './Components/custom-events/custom-events.component';
+import { CustomEventProductComponent } from './Components/custom-events/custom-event-product/custom-event-product.component';
 
 @NgModule({
     declarations: [
@@ -34,6 +38,10 @@ import { TdfComponent } from './Components/tdf/tdf.component';
         GridComponent,
         AddcartComponent,
         TdfComponent,
+        ObjrefComponent,
+        FormvalidComponent,
+        CustomEventsComponent,
+        CustomEventProductComponent,
     ],
     imports: [
         BrowserModule,
